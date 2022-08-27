@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchRewarding", "TwitchRewarding.csproj", "{A9D7A7AA-793B-48FC-A267-FC9D2CF04819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchRewardingEngine", "..\TwitchRewardingEngine\TwitchRewardingEngine.csproj", "{CB0A53BC-2DCB-4188-BAC3-B1D5C3505B9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{631DD40F-FB0D-4DA2-A244-6C22CEBC57CD}"
+	ProjectSection(SolutionItems) = preProject
+		update to StreamerBot.bat = update to StreamerBot.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9D7A7AA-793B-48FC-A267-FC9D2CF04819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D7A7AA-793B-48FC-A267-FC9D2CF04819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D7A7AA-793B-48FC-A267-FC9D2CF04819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D7A7AA-793B-48FC-A267-FC9D2CF04819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB0A53BC-2DCB-4188-BAC3-B1D5C3505B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB0A53BC-2DCB-4188-BAC3-B1D5C3505B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB0A53BC-2DCB-4188-BAC3-B1D5C3505B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB0A53BC-2DCB-4188-BAC3-B1D5C3505B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBB5771F-054E-4CD8-9211-BADB53741885}
+	EndGlobalSection
+EndGlobal
