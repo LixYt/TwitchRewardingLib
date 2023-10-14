@@ -38,6 +38,7 @@ namespace TwitchRewarding
             this.LoadViewersData = new System.Windows.Forms.Button();
             this.SaveViewersData = new System.Windows.Forms.Button();
             this.tabConfig = new System.Windows.Forms.TabPage();
+            this.test = new System.Windows.Forms.Button();
             this.SaveConfig = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.c_DetailedHistory = new System.Windows.Forms.CheckBox();
@@ -80,8 +81,8 @@ namespace TwitchRewarding
             this.label1 = new System.Windows.Forms.Label();
             this.MainTab = new System.Windows.Forms.TabControl();
             this.TopPage = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabConfig.SuspendLayout();
@@ -198,6 +199,7 @@ namespace TwitchRewarding
             // 
             // tabConfig
             // 
+            this.tabConfig.Controls.Add(this.test);
             this.tabConfig.Controls.Add(this.SaveConfig);
             this.tabConfig.Controls.Add(this.groupBox2);
             this.tabConfig.Controls.Add(this.groupBox1);
@@ -208,6 +210,19 @@ namespace TwitchRewarding
             this.tabConfig.TabIndex = 0;
             this.tabConfig.Text = "Config";
             this.tabConfig.UseVisualStyleBackColor = true;
+            // 
+            // test
+            // 
+            this.test.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.test.Enabled = false;
+            this.test.Location = new System.Drawing.Point(740, 187);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(75, 23);
+            this.test.TabIndex = 3;
+            this.test.Text = "test";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.Visible = false;
+            this.test.Click += new System.EventHandler(this.test_Click);
             // 
             // SaveConfig
             // 
@@ -509,9 +524,9 @@ namespace TwitchRewarding
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 108);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 13);
+            this.label8.Size = new System.Drawing.Size(87, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Present (per 5 minuts)";
+            this.label8.Text = "Present (per tick)";
             // 
             // c_SubT3
             // 
@@ -685,6 +700,17 @@ namespace TwitchRewarding
             this.TopPage.Text = "Viewer list ordered by points";
             this.TopPage.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(820, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Top viewers";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToOrderColumns = true;
@@ -701,17 +727,6 @@ namespace TwitchRewarding
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(897, 284);
             this.dataGridView2.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(820, 290);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Top viewers";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TwitchRewardingForm
             // 
@@ -809,6 +824,7 @@ namespace TwitchRewarding
         private System.Windows.Forms.TabPage TopPage;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button test;
     }
 }
 

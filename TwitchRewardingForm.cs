@@ -139,6 +139,23 @@ namespace TwitchRewarding
             dataGridView2.DataSource = BL_ViewersRewards;
             Count.Text = $"Viewers : {BL_ViewersRewards.Count}";
             foreach (DataGridViewColumn c in dataGridView2.Columns) { c.SortMode = DataGridViewColumnSortMode.Automatic; }
+
+            int i = 1;
+            foreach (DataGridViewRow r in dataGridView2.Rows)
+            {
+                if (i <= 5) { r.DefaultCellStyle.BackColor = Color.LightYellow; }
+                if (i > 5 && i <= 10) { r.DefaultCellStyle.BackColor = Color.LightCyan; }
+                if (i > 10 && i <= 20) { r.DefaultCellStyle.BackColor = Color.LightGray; }
+                if (i > 20) break;
+                i++;
+            }
+        }
+
+        private void test_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, TwitchViewersRewards> t = TVR.LoadViewerStates();
+            t.Reward("Akuaina", "StreamerBonus", 1);
+            TVR.SaveViewersState(t);
         }
     }
 }
